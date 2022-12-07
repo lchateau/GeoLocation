@@ -54,7 +54,7 @@ void UGeoLocationSettings::GeoLocationSetIOSMinimumDistance(float minimumDistanc
 
 void UGeoLocationSettings::GeoLocationSetEditorSimulatedGeoLocationPreset(EGeoLocationPreset preset)
 {
-#if WITH_EDITOR
+// #if WITH_EDITOR
 	if (preset == EGeoLocationPreset::Glasgow)
 	{
 		EditorSimulatedPositionLatitude = GLASGOW_LATITUDE;
@@ -90,41 +90,41 @@ void UGeoLocationSettings::GeoLocationSetEditorSimulatedGeoLocationPreset(EGeoLo
 		EditorSimulatedPositionLatitude = TOYKO_LATITUDE;
 		EditorSimulatedPositionLongitude = TOYKO_LONGITUDE;
 	}
-#endif
+// #endif
 }
 
 void UGeoLocationSettings::GeoLocationSetEditorSimulatedGeoLocationCustom(float latitude, float longitude)
 {
-#if WITH_EDITOR
+// #if WITH_EDITOR
 	EditorSimulatedPositionLatitude = latitude;
 	EditorSimulatedPositionLongitude = longitude;
-#endif
+// #endif
 }
 
 void UGeoLocationSettings::GeoLocationSetEditorSimulatedHeadingMagneticNorthCustom(float magneticNorth)
 {
-#if WITH_EDITOR
+// #if WITH_EDITOR
 	EditorSimulatedMagneticNorth = magneticNorth;
-#endif
+// #endif
 }
 
 void UGeoLocationSettings::GeoLocationSetEditorSimulatedHeadingTrueNorthCustom(float trueNorth)
 {
-#if WITH_EDITOR
+// #if WITH_EDITOR
 	EditorSimulatedTrueNorth = trueNorth;
-#endif
+// #endif
 }
 
 void UGeoLocationSettings::GeoLocationSetEditorSimulatedIntervalTime(float intervalTime)
 {
-#if WITH_EDITOR
+// #if WITH_EDITOR
 	EditorLocationIntervalTime = intervalTime;
-#endif
+// #endif
 }
 
 void UGeoLocationSettings::GeoLocationSetEditorSimulatedHeadingIntervalTime(float intervalTime)
 {
-#if WITH_EDITOR
+// #if WITH_EDITOR
 	EditorHeadingIntervalTime = intervalTime;
-#endif
+// #endif
 }
